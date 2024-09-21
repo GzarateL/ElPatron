@@ -1,0 +1,245 @@
+/* Estilo personalizado para el header */
+.bg-danger-custom {
+    background-color: #ff0000 !important; /* Rojo personalizado */
+}
+
+/* Barra superior de contacto centrada */
+.top-bar {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: #ff0000; /* Rojo personalizado */
+    color: white;
+    padding: 10px 0;
+}
+
+.top-bar .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el teléfono y el correo */
+}
+
+.top-bar .contact-info i {
+    margin-right: 5px;
+}
+
+.top-bar .social-icons {
+    margin-left: 20px; /* Espacio entre el correo y los iconos sociales */
+}
+
+.top-bar a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: #ffcccc; /* Cambiar el color al pasar el ratón */
+}
+
+/* Estilo para el navbar en su posición original */
+.navbar {
+    background-color: rgb(0, 0, 0) !important; /* Negro */
+    transition: background-color 0.5s ease; /* Transición suave al cambiar el color */
+}
+
+/* Estilo para el navbar cuando se hace scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.521) !important; /* Semi-transparente cuando se hace scroll */
+}
+
+/* Diseño de los enlaces del navbar */
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    text-align: center;
+    padding: 0 15px; /* Espacio horizontal entre los enlaces */
+    font-size: 1.2rem; /* Tamaño de letra de los enlaces */
+    letter-spacing: 0.05rem; /* Espaciado entre las letras */
+}
+
+/* Centrar los elementos de la barra de navegación */
+.navbar .navbar-nav {
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+/* Ajustar la posición del logo */
+.navbar .navbar-brand {
+    font-size: 2rem; /* Tamaño del texto de la marca */
+    margin-right: 15px; /* Añadir espacio entre el logo y los enlaces */
+}
+
+.navbar .navbar-brand img {
+    height: 60px; /* Ajuste de la altura del logo */
+    margin-right: 15px; /* Espacio entre el logo y el primer enlace del menú */
+}
+
+/* Ajuste del tamaño y altura de las imágenes del carrusel */
+.hero-carousel .carousel-inner img {
+    max-width: 100%; /* Mantén el ancho al 100% del contenedor */
+    max-height: 850px; /* Ajusta este valor según tus necesidades */
+    height: auto;
+    margin: 0 auto; /* Centra la imagen */
+    object-fit: cover; /* Mantiene la imagen ajustada al contenedor */
+}
+
+/* Ajuste del texto sobre las imágenes del carrusel */
+.hero-carousel .carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-carousel .carousel-caption p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.horarios {
+    position: absolute; /* Posiciona la sección de horarios encima del carrusel */
+    top: 897px; /* Ajusta la distancia desde la parte superior */
+    left: 0; /* Empieza desde la izquierda */
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    color: white;
+    padding: 15px 0; /* Ajusta el padding, deja 0 en los lados horizontales */
+    z-index: 1000; /* Asegura que la sección quede encima del carrusel */
+    text-align: center;
+}
+
+.horarios h4, .horarios p {
+    margin: 0;
+}
+
+/* Estilos para la sección de historia */
+.about-section {
+    padding: 50px 0;
+    background-color: white; /* Fondo blanco */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Logo de la columna izquierda */
+.about-logo {
+    max-width: 300px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Descripción de la columna izquierda */
+.about-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+/* Botón Leer Más */
+.about-btn {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.about-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Ajuste del video en la columna derecha */
+.about-video {
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del video */
+    max-width: 70%; /* Asegura que el video ocupe el ancho completo de la columna */
+    height: auto; /* Mantiene las proporciones del video */
+}
+
+
+/* Alineación vertical de la fila */
+.row.align-items-center {
+    align-items: center; /* Alinea el texto y la imagen verticalmente */
+}
+
+/* Estilos para la sección de promociones */
+.promotions-section {
+    padding: 50px 0;
+    background-color: #0000001c; /* Fondo claro */
+}
+
+/* Título centrado para la sección de promociones */
+.promotions-title {
+    font-family: 'Anton', sans-serif;
+    color: #d32f2f; /* Rojo personalizado */
+    font-size: 2.5rem;
+}
+
+/* Imágenes del carrusel con márgenes */
+.promotion-img {
+    margin: 0 10px; /* Márgenes entre las imágenes */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor de las imágenes */
+    height: 600px; /* Alto fijo de las imágenes */
+    object-fit: cover; /* Ajuste para que las imágenes no se deformen */
+}
+
+
+/* Ajuste del footer */
+footer {
+    background-color: #00000050;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a.btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+footer a.btn:hover {
+    background-color: #cc0000; /* Cambiar el color del botón al pasar el ratón */
+}
+
+
+
+/* Ajustes generales */
+body {
+    background-image: url('../img/fondo_1.png'); /* Cambia la ruta si es necesario */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+h1, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar personalizado para navegadores basados en WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;  /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: black;  /* Fondo del scrollbar negro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb {
+    background: red; /* Barrita roja */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff4d4d; /* Barrita ligeramente más clara al pasar el mouse */
+}
