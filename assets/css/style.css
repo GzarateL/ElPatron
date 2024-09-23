@@ -76,7 +76,7 @@
 /* Ajuste del tamaño y altura de las imágenes del carrusel */
 .hero-carousel .carousel-inner img {
     max-width: 100%; /* Mantén el ancho al 100% del contenedor */
-    max-height: 850px; /* Ajusta este valor según tus necesidades */
+    max-height: 650px; /* Ajusta este valor según tus necesidades */
     height: auto;
     margin: 0 auto; /* Centra la imagen */
     object-fit: cover; /* Mantiene la imagen ajustada al contenedor */
@@ -206,6 +206,32 @@ footer a.btn:hover {
     background-color: #cc0000; /* Cambiar el color del botón al pasar el ratón */
 }
 
+.social-media-section {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.social-media-section h2 {
+    color: red;
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.facebook-embed iframe,
+.instagram-embed iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
+
+.lightwidget-widget {
+    width: 100%;
+    height: 700px;
+    border: none;
+}
 
 
 /* Ajustes generales */

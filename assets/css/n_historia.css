@@ -1,0 +1,134 @@
+/* Estilos personalizados para la historia */
+.history-section h2 {
+    font-family: 'Anton', sans-serif;
+    color: #c40000; /* Rojo personalizado */
+    font-size: 4rem; /* Tamaño más grande del texto */
+    text-align: center; /* Centra el título */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 5px; /* Espaciado amplio entre letras */
+    margin-bottom: 60px; /* Espacio debajo del título */
+    position: relative;
+    z-index: 1;
+    display: inline-block; /* Permite centrar decoraciones */
+    padding: 0 20px; /* Espacio interno lateral */
+    background: linear-gradient(to right, transparent 20%, rgba(122, 122, 122, 0.1) 50%, transparent 80%); /* Fondo degradado suave */
+    
+    /* Sombra sutil para el texto */
+    text-shadow: 3px 3px 8px rgba(147, 147, 147, 0.3);
+    
+    /* Efecto animado de subrayado */
+    animation: slideUnderline 1.2s ease-in-out forwards;
+}
+
+/* Animación para que el subrayado aparezca de izquierda a derecha */
+@keyframes slideUnderline {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Efecto hover para un estilo dinámico */
+.history-section h2:hover {
+    color: #fff; /* Cambia el color del texto al pasar el ratón */
+    transition: all 0.2s ease-in-out;
+}
+
+.history-section h2:hover::after {
+    background-color: #fff; /* Cambia el color de la línea decorativa al pasar el ratón */
+}
+
+/* Estilos separados para las imágenes */
+.img-historia-1,
+.img-historia-2 {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 260px; /* Fija la altura de la imagen */
+    object-fit: cover;
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    margin-top: 20px;   /* Mover hacia abajo */
+}
+
+.img-historia-1 {
+    margin-left: 10px;  /* Espaciado adicional a la izquierda */
+}
+
+.img-historia-2 {
+    margin-left: 20px; /* Espaciado adicional a la izquierda */
+}
+
+.img-historia-1:hover,
+.img-historia-2:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Efecto de sombra al hacer hover */
+}
+
+/* Estilos separados para los párrafos */
+.text-historia-1,
+.text-historia-2 {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #ffffff;
+    text-align: justify;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+    border-radius: 15px;
+    height: 260px; /* Igual altura que la imagen */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el texto */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px; /* Espacio debajo del texto */
+}
+
+.text-historia-2 {
+    margin-left: 20px; /* Más margen para el texto 2 */
+}
+
+.text-historia-1:hover,
+.text-historia-2:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro al hacer hover */
+}
+
+/* Alineación de las columnas */
+.history-section .row {
+    display: flex;
+    align-items: center; /* Centra verticalmente las columnas */
+    justify-content: space-between; /* Espacio entre columnas */
+    margin-bottom: 40px; /* Espacio entre las filas */
+}
+
+.history-section .col-md-6,
+.history-section .col-md-5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Organiza imágenes y textos en columna */
+}
+
+/* Sección de valores, misión y visión */
+.values-section h4 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    color: #c40000;
+    margin-bottom: 15px;
+}
+
+.values-section p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
